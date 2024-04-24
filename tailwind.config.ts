@@ -27,6 +27,9 @@ const config: Config = {
           200: "#D8D8D8",
           100: "#F4F4F4",
         },
+        "main-yellow": {
+          DEFAULT: "#FFE377",
+        },
       },
     },
   },
