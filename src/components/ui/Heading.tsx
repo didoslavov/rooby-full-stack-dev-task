@@ -9,7 +9,7 @@ function Heading({
 }) {
   return (
     <div
-      className={`text-6xl font-bold leading-[74px] -tracking-[0.89] ${className}`}
+      className={`text-3xl font-bold -tracking-[0.89] md:leading-[74px] ${className}`}
     >
       {children}
     </div>
