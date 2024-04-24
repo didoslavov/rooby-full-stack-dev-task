@@ -42,7 +42,7 @@ function Header() {
       <NavLink className="col-span-3 col-start-4 text-nowrap rounded-[4px] bg-white px-4 py-2 text-center text-xs font-bold -tracking-[0.19px] hover:bg-main-grey-200 sm:mr-4 md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-11">
         Log In
       </NavLink>
-      <NavLink className="col-span-3 col-start-8 rounded-[4px] bg-main-blue py-2 text-center text-xs font-bold -tracking-[0.19px] text-white hover:skew-x-1 hover:skew-y-1 hover:scale-110 sm:col-span-2 sm:col-start-7 md:col-start-10 lg:col-start-12 xl:col-span-1">
+      <NavLink className="col-span-3 col-start-8 rounded-[4px] bg-main-blue py-2 text-center text-xs font-bold -tracking-[0.19px] text-white transition-all duration-75 hover:skew-x-1 hover:skew-y-1 hover:scale-110 sm:col-span-2 sm:col-start-7 md:col-start-10 lg:col-start-12 xl:col-span-1">
         Try for Free
       </NavLink>
       <AiOutlineMenu

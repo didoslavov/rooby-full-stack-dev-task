@@ -1,6 +1,6 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/layout/Hero";
-import How from "@/components/layout/How";
+import Benefits from "@/components/layout/Benefits/Benefits";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <div className="m-auto grid max-w-[1440px] grid-cols-12 gap-x-[30px] bg-main-grey-100">
         <Header />
         <Hero />
-        <How />
+        <Benefits />
       </div>
     </main>
   );
