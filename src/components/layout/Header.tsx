@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import logo from "/public/logo.svg";
 import NavLink from "../ui/NavLink";
 
-const navLinks = ["Product", "Pricing", "Company", "Recources", "Contact"];
+const navLinks = ["Product", "Pricing", "Company", "Blog", "Contact"];
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ function Header() {
   const toggleMobileMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="relative col-start-1 col-end-13 grid grid-cols-12 items-center px-4 py-6 md:pl-14 2xl:col-start-3 2xl:col-end-11">
+    <header className="relative col-start-1 col-end-13 grid grid-cols-12 items-center px-4 py-6 md:pl-4 2xl:col-start-2 2xl:col-end-12">
       <Image
         src={logo}
         className={`${isOpen ? "left absolute top-6 z-50 m-4" : "col-span-2 col-start-1"}`}
@@ -39,10 +39,10 @@ function Header() {
           onClick={toggleMobileMenu}
         />
       </ul>
-      <NavLink className="col-span-3 col-start-4 text-nowrap rounded-[4px] bg-white px-4 py-2 text-center text-xs font-bold -tracking-[0.19px] hover:bg-main-grey-200 sm:mr-4 md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-10">
+      <NavLink className="col-span-3 col-start-4 text-nowrap rounded-[4px] bg-white px-4 py-2 text-center text-xs font-bold -tracking-[0.19px] hover:bg-main-grey-200 sm:mr-4 md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-11">
         Log In
       </NavLink>
-      <NavLink className="col-span-3 col-start-8 rounded-[4px] bg-main-blue py-2 text-center text-xs font-bold -tracking-[0.19px] text-white hover:skew-x-1 hover:skew-y-1 hover:scale-110 sm:col-span-2 sm:col-start-7 md:col-start-10 lg:col-start-11 lg:w-[65%]">
+      <NavLink className="col-span-3 col-start-8 rounded-[4px] bg-main-blue py-2 text-center text-xs font-bold -tracking-[0.19px] text-white hover:skew-x-1 hover:skew-y-1 hover:scale-110 sm:col-span-2 sm:col-start-7 md:col-start-10 lg:col-start-12 xl:col-span-1">
         Try for Free
       </NavLink>
       <AiOutlineMenu

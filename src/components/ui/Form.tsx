@@ -61,10 +61,10 @@ function Form() {
         />
       )}
       <form
-        className="col-start-1 col-end-13 mb-3 md:col-end-12 2xl:col-end-9"
+        className="col-start-1 col-end-13 mb-3 md:col-end-12 2xl:col-end-10"
         onSubmit={handleSubmit}
       >
-        <div className="col-start-1 col-end-11 grid grid-cols-12 rounded-[12px] bg-white px-3 py-2 shadow-sm">
+        <div className="col-start-1 col-end-11 grid grid-cols-12 rounded-[12px] bg-white p-3 shadow-sm">
           <input
             type="text"
             name="email"
