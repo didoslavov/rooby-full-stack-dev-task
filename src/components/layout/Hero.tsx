@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../ui/Heading";
 import Image from "next/image";
-import heroImage from "/public/hero.png";
+import heroImage from "/public/hero.svg";
 import Form from "../ui/Form";
 import google from "/public/google.svg";
 import atlassian from "/public/atlassian.svg";
@@ -35,10 +35,10 @@ function Hero() {
           Full access. No credit card required.
         </p>
       </article>
-      <p className="col-span-full col-start-1  row-start-2 justify-self-start -tracking-[0.22px] md:col-end-4 md:row-auto ">
+      <p className="col-span-full col-start-1 row-start-2 justify-self-start font-medium -tracking-[0.22px] md:col-end-4 md:row-auto ">
         Trusted by 1,000+ customers
       </p>
-      <div className="col-span-full col-start-1 row-start-3 flex flex-wrap justify-between gap-3 pb-8 pt-4 md:col-start-4 md:col-end-13 md:row-auto md:gap-8 lg:flex-nowrap xl:col-start-4 xl:col-end-12  xl:gap-16">
+      <div className="col-span-full col-start-1 row-start-3 flex flex-wrap justify-between gap-3 pb-4 pt-4 md:col-start-4 md:col-end-13 md:row-auto md:gap-8 lg:flex-nowrap xl:col-start-4 xl:col-end-12 xl:gap-16">
         {logos.map((l, i) => (
           <Image
             src={l}
