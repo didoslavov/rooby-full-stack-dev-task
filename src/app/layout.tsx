@@ -1,22 +1,28 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/layout/Header";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: 'Rooody | Full Stack DEV',
-    description: 'Rooody - powefull tools for your business',
+  title: "Rooody | Full Stack DEV",
+  description: "Rooody - powefull tools for your business",
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en">
-            <body className={inter.className}>{children}</body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body className={`${inter.className} bg-black`}>
+        <main className="m-auto grid max-w-[1440px] grid-cols-12 gap-x-[30px] bg-main-grey-100">
+          <Header />
+          {children}
+        </main>
+      </body>
+    </html>
+  );
 }

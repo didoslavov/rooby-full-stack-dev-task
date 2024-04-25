@@ -13,7 +13,7 @@ const logos = [google, atlassian, canon, walmart, amazon];
 
 function Hero() {
   return (
-    <section className="col-start-1 col-end-13 row-start-2 grid grid-cols-12 items-center justify-center justify-items-center p-4 sm:col-start-2 sm:col-end-12 md:col-start-1 md:col-end-13 md:py-20 md:pl-4 2xl:col-start-2 2xl:col-end-13 2xl:gap-x-20">
+    <section className="col-start-1 col-end-13 grid grid-cols-12 items-center justify-center justify-items-center p-4 sm:col-start-2 sm:col-end-12 md:col-start-1 md:col-end-13 md:py-20 md:pl-4 2xl:col-start-2 2xl:col-end-13 2xl:gap-x-20">
       <Image
         src={heroImage}
         alt="Dashboard image"
