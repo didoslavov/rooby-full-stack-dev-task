@@ -3,6 +3,7 @@ import Benefits from "@/components/layout/Benefits/Benefits";
 import Expertise from "@/components/layout/Expertise/Expertise";
 import Integrations from "@/components/layout/Integrations/Integrations";
 import News from "@/components/layout/News/News";
+import Results from "@/components/layout/Results/Results";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Expertise />
       <Integrations />
       <News />
+      <Results />
     </div>
   );
 }
