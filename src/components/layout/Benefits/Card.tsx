@@ -7,7 +7,7 @@ function Card({
   card: { icon: StaticImageData; heading: string; description: string };
 }) {
   return (
-    <figure className="hover:bg-main-yellow group h-full rounded-xl bg-main-blue-900 px-4 py-8 text-white transition-all duration-500 hover:-translate-y-[10px] hover:cursor-pointer lg:px-8 lg:py-16">
+    <figure className="group h-full rounded-xl bg-main-blue-900 px-4 py-8 text-white drop-shadow-2xl transition-all duration-500 hover:-translate-y-[10px] hover:cursor-pointer hover:bg-main-yellow lg:px-8 lg:py-16">
       <Image
         src={card.icon}
         alt="Icon"
