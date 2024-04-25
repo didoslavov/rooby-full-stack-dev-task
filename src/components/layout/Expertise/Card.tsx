@@ -1,9 +1,10 @@
 import Image, { StaticImageData } from "next/image";
 import Heading from "@/components/ui/Heading";
 import check from "/public/expertise/check.svg";
+import Chip from "@/components/ui/Chip";
 
 interface Expertise {
-  banner: string;
+  chip: string;
   heading: string;
   description: string;
   list: string[];
@@ -14,9 +15,7 @@ function Card({ expertise }: { expertise: Expertise }) {
   return (
     <>
       <div className="py-6 md:pt-11 lg:flex-1">
-        <span className="mb-2 block w-fit rounded bg-main-yellow px-2 py-[6px] text-sm font-bold uppercase tracking-[1.4px] text-main-grey sm:mb-8">
-          {expertise.banner}
-        </span>
+        <Chip accent>{expertise.chip}</Chip>
         <Heading className="mb-6">
           <h3 className="-tracking-[0.67px] lg:leading-[58px]">
             {expertise.heading}
