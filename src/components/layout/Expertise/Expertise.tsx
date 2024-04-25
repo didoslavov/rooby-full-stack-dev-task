@@ -47,29 +47,35 @@ const cards = [
 
 function Expertise() {
   return (
-    <section className="col-start-2 col-end-12">
+    <section className="col-start-1 col-end-13 grid grid-cols-subgrid bg-white">
       {cards.map((c, i) => (
         <article
           key={i}
-          className={`flex ${i % 2 === 1 ? "flex-row-reverse" : "flex-row"} my-[120px] border-t border-main-grey-700 pt-12`}
+          className={`flex flex-col items-center text-center md:text-start ${i % 2 === 1 ? "xl:flex-row-reverse xl:gap-24" : "xl:flex-row"} col-start-2 col-end-12 mt-16 border-t border-main-grey-700 pt-6 md:my-16 xl:my-[120px] xl:pt-12`}
         >
-          <div className="flex-1 pb-6 pt-11">
-            <span className="bg-main-yellow rounded px-2 py-[6px] text-sm font-bold uppercase tracking-[1.4px] text-main-grey">
+          <div className="flex-1 pb-6 pt-6 md:pt-11">
+            <span className="bg-main-yellow mb-4 inline-block rounded px-2 py-[6px] text-sm font-bold uppercase tracking-[1.4px] text-main-grey">
               {c.banner}
             </span>
-            <Heading>
-              <h3 className="text-5xl leading-[58px] -tracking-[0.67px]">
+            <Heading className="mb-6">
+              <h3 className="leading-[58px] -tracking-[0.67px] md:text-5xl">
                 {c.heading}
               </h3>
             </Heading>
-            <p className="w-[82%] text-lg leading-7 tracking-[0.2px]">
+            <p className="mb-4 text-sm leading-7 tracking-[0.2px] md:text-lg xl:w-[82%]">
               {c.description}
             </p>
-            <ul className="w-[82%]">
+            <ul className="xl:w-[82%]">
               {c.list.map((li, i) => (
-                <div key={i} className="flex items-start">
-                  <Image src={check} alt="Check icon" className="mr-6 mt-2" />
-                  <li className="text-lg leading-7 tracking-[0.2px]">{li}</li>
+                <div key={i} className="mb-6 flex items-start">
+                  <Image
+                    src={check}
+                    alt="Check icon"
+                    className="mr-2 mt-2 md:mr-6"
+                  />
+                  <li className="text-start text-sm leading-7 tracking-[0.2px] md:text-lg">
+                    {li}
+                  </li>
                 </div>
               ))}
             </ul>
