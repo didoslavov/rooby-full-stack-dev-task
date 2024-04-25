@@ -7,7 +7,7 @@ import Card from "./Card";
 const cards = [
   {
     img: increase,
-    banner: "Sales",
+    chip: "Sales",
     heading: "Increase company revenue up to 65%",
     description:
       "Automate your sales, marketing, and service in one platform. Avoid data leaks and enable consistent messaging.",
@@ -19,7 +19,7 @@ const cards = [
   },
   {
     img: marketing,
-    banner: "Marketing",
+    chip: "Marketing",
     heading: "Marketing",
     description:
       "Market like the most successful companies in the world with Agile CRM's marketing automation software.",
@@ -31,7 +31,7 @@ const cards = [
   },
   {
     img: help,
-    banner: "Service",
+    chip: "Service",
     heading: "Help Desk Software",
     description:
       "Great customer support separates decent companies from excellent companies. A positive customer support experience is a crucially important piece of the customer journey.",
