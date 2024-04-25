@@ -5,11 +5,11 @@ const Logo = ({
   className,
 }: {
   src: StaticImageData;
-  className: string;
+  className?: string;
 }) => {
   return (
     <div
-      className={`flex items-center justify-center rounded-xl bg-white p-5 ${className}`}
+      className={`col-span-3 flex items-center justify-center rounded-xl bg-white p-5 ${className}`}
     >
       <Image src={src} alt="Company Logo" />
     </div>
