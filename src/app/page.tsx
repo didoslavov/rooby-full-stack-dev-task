@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Hero from "@/components/layout/Hero";
 import Benefits from "@/components/layout/Benefits/Benefits";
 import Expertise from "@/components/layout/Expertise/Expertise";
+import Integrations from "@/components/Integrations/Integrations";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <Benefits />
         <Expertise />
+        <Integrations />
       </div>
     </main>
   );
