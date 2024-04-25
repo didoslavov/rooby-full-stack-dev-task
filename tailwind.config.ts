@@ -30,6 +30,10 @@ const config: Config = {
         "main-yellow": {
           DEFAULT: "#FFE377",
         },
+        "main-green": {
+          DEFAULT: "#00CC61",
+          100: "#EBFBF3",
+        },
       },
     },
   },
