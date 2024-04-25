@@ -1,6 +1,5 @@
-import { BiChevronRight } from "react-icons/bi";
 import React from "react";
-import Heading from "../ui/Heading";
+import Heading from "../../ui/Heading";
 import star from "/public/integrations/star.svg";
 import hubspot from "/public/integrations/hubspot.svg";
 import zoom from "/public/integrations/zoom.svg";
@@ -12,7 +11,7 @@ import slack from "/public/integrations/slack.svg";
 import asana from "/public/integrations/asana.svg";
 import teams from "/public/integrations/teams.svg";
 import Logo from "./Logo";
-import MainLink from "../ui/MainLink";
+import MainLink from "../../ui/MainLink";
 
 function Integrations() {
   return (

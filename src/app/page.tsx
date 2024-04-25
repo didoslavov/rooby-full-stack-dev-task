@@ -2,7 +2,7 @@ import Header from "@/components/layout/Header";
 import Hero from "@/components/layout/Hero";
 import Benefits from "@/components/layout/Benefits/Benefits";
 import Expertise from "@/components/layout/Expertise/Expertise";
-import Integrations from "@/components/Integrations/Integrations";
+import Integrations from "@/components/layout/Integrations/Integrations";
 
 export default function Home() {
   return (
