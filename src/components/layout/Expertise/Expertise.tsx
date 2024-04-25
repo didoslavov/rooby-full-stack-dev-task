@@ -47,9 +47,12 @@ function Expertise() {
   return (
     <section className="col-start-1 col-end-13 grid grid-cols-subgrid bg-white">
       {cards.map((c, i) => (
-        <Fragment key={i}>
-          <Card index={i} expertise={c} />
-        </Fragment>
+        <article
+          key={i}
+          className={`flex flex-col items-center gap-10 sm:text-center md:flex-row md:text-start lg:gap-0 ${i === cards.length - 1 && "mb-16 lg:mb-[120px]"} ${i % 2 === 1 ? "xl:flex-row-reverse xl:gap-24" : "xl:flex-row"} col-start-2 col-end-12 mt-16 border-t border-main-grey-700 xl:mt-[120px] xl:pt-12`}
+        >
+          <Card expertise={c} />
+        </article>
       ))}
     </section>
   );
