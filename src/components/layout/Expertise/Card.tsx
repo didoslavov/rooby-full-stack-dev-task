@@ -18,7 +18,7 @@ function Card({ expertise }: { expertise: Expertise }) {
           {expertise.banner}
         </span>
         <Heading className="mb-6">
-          <h3 className="-tracking-[0.67px] lg:text-5xl lg:leading-[58px]">
+          <h3 className="-tracking-[0.67px] lg:leading-[58px]">
             {expertise.heading}
           </h3>
         </Heading>

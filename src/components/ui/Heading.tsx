@@ -7,7 +7,11 @@ function Heading({
   children: ReactNode;
   className?: string;
 }) {
-  return <div className={`text-3xl font-bold ${className}`}>{children}</div>;
+  return (
+    <div className={`text-3xl font-bold lg:text-5xl ${className}`}>
+      {children}
+    </div>
+  );
 }
 
 export default Heading;

@@ -20,8 +20,8 @@ function Hero() {
         className="col-span-full row-start-4 md:col-span-full md:col-start-9 md:row-span-full md:self-start md:justify-self-start xl:col-start-7"
       />
       <article className="col-start-1 col-end-13 mb-10 grid grid-cols-12 self-start md:col-end-9 md:pb-2 xl:col-end-7 xl:pb-20">
-        <Heading className="col-span-full col-start-1 mb-6 text-center md:col-end-11 md:text-start  md:text-4xl lg:col-span-full xl:text-6xl">
-          <h1 className="-tracking-[0.89] text-main-blue md:leading-[74px]">
+        <Heading className="col-span-full col-start-1 mb-6 text-center md:col-end-11 md:text-start md:text-4xl lg:col-span-full xl:text-6xl">
+          <h1 className="-tracking-[0.89] text-main-blue lg:leading-[74px]">
             Bringing companies and customers together, anywhere
           </h1>
         </Heading>

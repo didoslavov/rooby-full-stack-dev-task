@@ -29,7 +29,7 @@ const cards = [
 function Benefits() {
   return (
     <section className="col-span-full grid grid-cols-12 bg-main-blue p-4 pt-16 lg:py-32">
-      <Heading className="col-start-1 col-end-13 mb-8 text-center text-2xl text-white sm:col-start-3 sm:col-end-11 lg:text-start lg:text-5xl xl:col-start-2 xl:col-end-7">
+      <Heading className="col-start-1 col-end-13 mb-8 text-center text-white sm:col-start-3 sm:col-end-11 lg:text-start xl:col-start-2 xl:col-end-7">
         <h2 className="leading-tight">
           Here&apos;s how Rooody can benefit your business
         </h2>

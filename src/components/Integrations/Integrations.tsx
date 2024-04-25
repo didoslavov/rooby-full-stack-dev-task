@@ -12,13 +12,12 @@ import slack from "/public/integrations/slack.svg";
 import asana from "/public/integrations/asana.svg";
 import teams from "/public/integrations/teams.svg";
 import Logo from "./Logo";
-import Link from "next/link";
 import MainLink from "../ui/MainLink";
 
 function Integrations() {
   return (
     <section className="col-start-1 col-end-13 grid grid-cols-subgrid py-10 md:py-14 xl:py-[120px]">
-      <Heading className="col-span-full text-center text-5xl leading-[68px] -tracking-[0.67px]">
+      <Heading className="col-span-full text-center leading-[68px] -tracking-[0.67px]">
         <h2>Over 300+ integrations</h2>
       </Heading>
       <p className="col-span-full mb-[72px] text-center text-lg leading-7 text-main-grey-800">
