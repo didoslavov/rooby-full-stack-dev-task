@@ -10,11 +10,11 @@ interface Expertise {
   img: StaticImageData;
 }
 
-function Card({ key, expertise }: { key: number; expertise: Expertise }) {
+function Card({ index, expertise }: { index: number; expertise: Expertise }) {
   return (
     <article
-      key={key}
-      className={`flex flex-col items-center text-center md:text-start ${key % 2 === 1 ? "xl:flex-row-reverse xl:gap-24" : "xl:flex-row"} col-start-2 col-end-12 mt-16 border-t border-main-grey-700 pt-6 md:my-16 xl:my-[120px] xl:pt-12`}
+      key={index}
+      className={`flex flex-col items-center text-center md:text-start ${index % 2 === 1 ? "xl:flex-row-reverse xl:gap-24" : "xl:flex-row"} col-start-2 col-end-12 mt-16 border-t border-main-grey-700 pt-6 md:my-16 xl:my-[120px] xl:pt-12`}
     >
       <div className="flex-1 pb-6 pt-6 md:pt-11">
         <span className="bg-main-yellow mb-4 inline-block rounded px-2 py-[6px] text-sm font-bold uppercase tracking-[1.4px] text-main-grey">

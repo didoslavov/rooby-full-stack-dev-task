@@ -41,7 +41,9 @@ function Benefits() {
       </p>
       <div className="col-start-2 col-end-12 flex flex-col gap-4 sm:col-start-3 sm:col-end-11 md:col-start-4 md:col-end-10 lg:col-start-1 lg:col-end-13 lg:flex-row lg:gap-[9px] lg:px-8 xl:col-start-2 xl:col-end-12 xl:px-0">
         {cards.map((c, i) => (
-          <Card key={i} card={c} />
+          <div key={i}>
+            <Card card={c} />
+          </div>
         ))}
       </div>
     </section>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import increase from "/public/expertise/increase.svg";
 import marketing from "/public/expertise/marketing.svg";
 import help from "/public/expertise/help.svg";
@@ -47,7 +47,9 @@ function Expertise() {
   return (
     <section className="col-start-1 col-end-13 grid grid-cols-subgrid bg-white">
       {cards.map((c, i) => (
-        <Card key={i} expertise={c} />
+        <Fragment key={i}>
+          <Card index={i} expertise={c} />
+        </Fragment>
       ))}
     </section>
   );
