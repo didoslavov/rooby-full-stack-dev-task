@@ -1,8 +1,8 @@
 import React from "react";
 import Heading from "../../ui/Heading";
-import face from "/public/face.svg";
-import laptop from "/public/laptop.svg";
-import wound from "/public/wound.svg";
+import face from "/public/benefits/face.svg";
+import laptop from "/public/benefits/laptop.svg";
+import wound from "/public/benefits/wound.svg";
 import Card from "./Card";
 
 const cards = [

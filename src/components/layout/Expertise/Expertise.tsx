@@ -1,7 +1,7 @@
 import React from "react";
-import increase from "/public/increase.svg";
-import marketing from "/public/marketing.svg";
-import help from "/public/help.svg";
+import increase from "/public/expertise/increase.svg";
+import marketing from "/public/expertise/marketing.svg";
+import help from "/public/expertise/help.svg";
 import Card from "./Card";
 
 const cards = [

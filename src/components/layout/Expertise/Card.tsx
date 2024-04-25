@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Heading from "@/components/ui/Heading";
-import check from "/public/check.svg";
+import check from "/public/expertise/check.svg";
 
 interface Expertise {
   banner: string;

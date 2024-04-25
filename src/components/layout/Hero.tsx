@@ -1,13 +1,13 @@
 import React from "react";
 import Heading from "../ui/Heading";
 import Image from "next/image";
-import heroImage from "/public/hero.svg";
+import heroImage from "/public/hero/hero.svg";
 import Form from "../ui/Form";
-import google from "/public/google.svg";
-import atlassian from "/public/atlassian.svg";
-import canon from "/public/canon.svg";
-import walmart from "/public/walmart.svg";
-import amazon from "/public/amazon.svg";
+import google from "/public/hero/google.svg";
+import atlassian from "/public/hero/atlassian.svg";
+import canon from "/public/hero/canon.svg";
+import walmart from "/public/hero/walmart.svg";
+import amazon from "/public/hero/amazon.svg";
 
 const logos = [google, atlassian, canon, walmart, amazon];
 
