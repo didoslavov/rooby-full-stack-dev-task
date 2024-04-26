@@ -1,6 +1,6 @@
 import Heading from "@/components/ui/Heading";
-import nellie from "/public/results/nellie.svg";
-import lawrence from "/public/results/lawrence.svg";
+import nellie from "/public/clients/nellie.svg";
+import lawrence from "/public/clients/lawrence.svg";
 import Card from "./Card";
 
 const cards = [
@@ -24,7 +24,7 @@ const cards = [
 
 function Results() {
   return (
-    <section className="col-span-full grid grid-cols-subgrid bg-white">
+    <section className="col-span-full grid grid-cols-subgrid bg-white xl:pb-20">
       <Heading className="col-span-full text-center md:col-start-2 md:col-end-10 md:text-start">
         <h2 className="mb-3 lg:leading-[68px] lg:-tracking-[0.67px]">
           Real-life results and revenue
