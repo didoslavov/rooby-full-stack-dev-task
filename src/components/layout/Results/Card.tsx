@@ -1,3 +1,4 @@
+import Customer from "@/components/ui/Customer";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
@@ -25,13 +26,7 @@ function Card({
         <p className="text-sm font-medium md:text-3xl lg:leading-[42px] lg:-tracking-[0.44px]">
           {card.text}
         </p>
-        <div className="flex gap-x-3">
-          <Image src={card.img} alt="Image of a person" />
-          <div className="flex flex-col">
-            <span className="font-bold">{card.name}</span>
-            <span className="text-main-grey">{card.position}</span>
-          </div>
-        </div>
+        <Customer img={card.img} name={card.name} position={card.position} />
       </div>
     </figure>
   );
