@@ -40,15 +40,17 @@ function Header() {
       </ul>
       <Link
         href="#"
-        className="col-span-3 col-start-4 text-nowrap rounded-[4px] bg-white px-4 py-2 text-center text-xs font-bold -tracking-[0.19px] hover:bg-main-grey-200 sm:mr-4 md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-11"
+        className="col-span-3 col-start-4 text-nowrap rounded-[4px] bg-white px-4 py-2 text-center text-xs font-bold -tracking-[0.19px] transition-all duration-500 hover:bg-main-blue-900 hover:bg-opacity-20 sm:mr-4 md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-11"
       >
         Log In
       </Link>
       <Link
         href="#"
-        className="col-span-3 col-start-8 rounded-[4px] bg-main-blue py-2 text-center text-xs font-bold -tracking-[0.19px] text-white transition-all duration-75 hover:skew-x-2 hover:skew-y-2 hover:scale-110 hover:bg-main-yellow hover:text-main-blue sm:col-span-2 sm:col-start-7 md:col-start-10 lg:col-start-12 xl:col-span-1"
+        className="group col-span-3 col-start-8 rounded-[4px] bg-main-blue py-2 text-center text-xs font-bold -tracking-[0.19px] text-white transition-all duration-75 hover:skew-x-2 hover:skew-y-2 hover:scale-110 hover:bg-main-yellow hover:text-main-blue sm:col-span-2 sm:col-start-7 md:col-start-10 lg:col-start-12 xl:col-span-1"
       >
-        Try for Free
+        <span className="group-hover:-skew-2 inline-block group-hover:-skew-y-2">
+          Try for Free
+        </span>
       </Link>
       <AiOutlineMenu
         onClick={toggleMobileMenu}
