@@ -3,7 +3,7 @@ import React from "react";
 
 function Copyrights() {
   return (
-    <div className="col-span-full col-start-1 grid grid-cols-subgrid border-opacity-25 pt-4 sm:col-span-3 sm:row-start-1 sm:row-end-3 md:mx-10 md:mt-12 lg:col-span-full lg:row-start-2 lg:border-t lg:border-main-grey-700 xl:mt-24 xl:pb-10 xl:pt-11">
+    <div className="col-span-full col-start-1 grid grid-cols-subgrid border-opacity-25 pt-4 sm:col-span-3 sm:row-start-1 sm:row-end-3 md:mx-10 md:mt-12 lg:col-span-full lg:row-start-2 lg:border-t lg:border-main-grey-700 xl:mt-24 xl:pt-11">
       <div className="col-span-full flex flex-col items-center justify-around gap-4 lg:grid lg:grid-cols-subgrid lg:gap-0">
         <p className="col-span-3 col-start-2 text-sm tracking-[0.2px] text-main-grey">
           © Copyright 2024
