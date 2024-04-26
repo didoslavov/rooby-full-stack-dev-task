@@ -4,6 +4,7 @@ import { BiChevronDown } from "react-icons/bi";
 import { CiGlobe } from "react-icons/ci";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
+import Link from "next/link";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -41,14 +42,15 @@ export default function DropDown({
             <div key={i} className="py-1">
               <Menu.Item>
                 {({ active }: { active: boolean }) => (
-                  <div
+                  <Link
+                    href="#"
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                       "block px-4 py-2 text-sm",
                     )}
                   >
                     {option}
-                  </div>
+                  </Link>
                 )}
               </Menu.Item>
             </div>
