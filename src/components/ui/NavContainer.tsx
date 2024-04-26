@@ -9,7 +9,10 @@ function NavContainer({ data }: { data: { title: string; links: string[] } }) {
       </Heading>
       <ul className="flex w-fit flex-col text-sm">
         {data.links.map((l, i) => (
-          <li key={i} className="relative leading-[34px] tracking-[0.2px]">
+          <li
+            key={i}
+            className="relative w-fit px-1 leading-[34px] tracking-[0.2px]"
+          >
             <NavLink>{l}</NavLink>
           </li>
         ))}
