@@ -20,8 +20,8 @@ export default function getFooterLinks(title: string) {
       links: [
         "Partner Program",
         "Get our newsletter",
-        "Sales Pipeline ",
-        "What is CRM?",
+        "Sales Pipeline",
+        "What is CRM",
         "CRM Comparison",
         "CarResourceseers",
       ],

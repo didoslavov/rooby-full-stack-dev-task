@@ -1,4 +1,5 @@
 import DropDown from "@/components/ui/DropDown";
+import NavLink from "@/components/ui/NavLink";
 import React from "react";
 
 function Copyrights() {
@@ -10,9 +11,15 @@ function Copyrights() {
         </p>
         <div className="lg:col-start-5 lg:col-end-9 lg:justify-self-center">
           <ul className="flex flex-col gap-4 text-sm tracking-[0.2px] text-black lg:flex-row lg:gap-10">
-            <li>Terms of Service</li>
-            <li>Privacy Policy</li>
-            <li>Cookies</li>
+            <li className="relative w-fit px-1">
+              <NavLink>Terms of Service</NavLink>
+            </li>
+            <li className="relative w-fit px-1">
+              <NavLink>Privacy Policy</NavLink>
+            </li>
+            <li className="relative w-fit px-1">
+              <NavLink>Cookies</NavLink>
+            </li>
           </ul>
         </div>
         <div className="col-span-2 col-start-10 justify-self-center">

@@ -29,7 +29,7 @@ function Header() {
       >
         {navLinks.map((l, i) => (
           <li key={i} className="relative px-1 py-1">
-            <NavLink className="">{l}</NavLink>
+            <NavLink link={l.toLowerCase()}>{l}</NavLink>
           </li>
         ))}
         <CgClose
