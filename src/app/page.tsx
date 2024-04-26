@@ -4,6 +4,7 @@ import Expertise from "@/components/layout/Expertise/Expertise";
 import Integrations from "@/components/layout/Integrations/Integrations";
 import News from "@/components/layout/News/News";
 import Results from "@/components/layout/Results/Results";
+import Testimonials from "@/components/layout/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Integrations />
       <News />
       <Results />
+      <Testimonials />
     </div>
   );
 }
