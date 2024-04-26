@@ -77,7 +77,7 @@ function Form() {
           <input
             type="submit"
             value="Try for free"
-            className="col-start-9 col-end-13 rounded-[8px] bg-main-blue px-2 py-1 text-[17px] font-semibold leading-[40px] tracking-tight text-white transition-all duration-300 hover:scale-105 hover:cursor-pointer"
+            className="col-start-9 col-end-13 rounded-[8px] bg-main-blue px-2 py-1 text-[17px] font-semibold leading-[40px] tracking-tight text-white transition-all duration-75 hover:scale-105 hover:cursor-pointer hover:bg-main-yellow hover:text-main-blue"
           />
         </div>
       </form>

@@ -6,6 +6,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import logo from "/public/logo.svg";
 import NavLink from "../ui/NavLink";
+import Link from "next/link";
 
 const navLinks = ["Product", "Pricing", "Company", "Blog", "Contact"];
 
@@ -28,9 +29,7 @@ function Header() {
       >
         {navLinks.map((l, i) => (
           <li key={i} className="relative px-1 py-1">
-            <NavLink className="before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:rounded-[4px] before:bg-main-blue-900 before:opacity-20 before:transition-all before:duration-500 hover:before:w-full">
-              {l}
-            </NavLink>
+            <NavLink className="">{l}</NavLink>
           </li>
         ))}
         <CgClose
@@ -39,12 +38,18 @@ function Header() {
           onClick={toggleMobileMenu}
         />
       </ul>
-      <NavLink className="col-span-3 col-start-4 text-nowrap rounded-[4px] bg-white px-4 py-2 text-center text-xs font-bold -tracking-[0.19px] hover:bg-main-grey-200 sm:mr-4 md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-11">
+      <Link
+        href="#"
+        className="col-span-3 col-start-4 text-nowrap rounded-[4px] bg-white px-4 py-2 text-center text-xs font-bold -tracking-[0.19px] hover:bg-main-grey-200 sm:mr-4 md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-11"
+      >
         Log In
-      </NavLink>
-      <NavLink className="col-span-3 col-start-8 rounded-[4px] bg-main-blue py-2 text-center text-xs font-bold -tracking-[0.19px] text-white transition-all duration-75 hover:skew-x-1 hover:skew-y-1 hover:scale-110 sm:col-span-2 sm:col-start-7 md:col-start-10 lg:col-start-12 xl:col-span-1">
+      </Link>
+      <Link
+        href="#"
+        className="col-span-3 col-start-8 rounded-[4px] bg-main-blue py-2 text-center text-xs font-bold -tracking-[0.19px] text-white transition-all duration-75 hover:skew-x-2 hover:skew-y-2 hover:scale-110 hover:bg-main-yellow hover:text-main-blue sm:col-span-2 sm:col-start-7 md:col-start-10 lg:col-start-12 xl:col-span-1"
+      >
         Try for Free
-      </NavLink>
+      </Link>
       <AiOutlineMenu
         onClick={toggleMobileMenu}
         size={30}
