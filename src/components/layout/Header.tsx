@@ -8,10 +8,12 @@ import logo from "/public/logo.svg";
 import NavLink from "../ui/NavLink";
 import Link from "next/link";
 import Button from "../ui/Button";
+import { usePathname } from "next/navigation";
 
 const navLinks = ["Product", "Pricing", "Company", "Blog", "Contact"];
 
 function Header() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMobileMenu = () => setIsOpen(!isOpen);
@@ -32,7 +34,16 @@ function Header() {
       >
         {navLinks.map((l, i) => (
           <li key={i} className="relative px-1 py-1">
-            <NavLink link={l.toLowerCase()}>{l}</NavLink>
+            <NavLink
+              className={
+                (pathname === `/${l.toLowerCase()}` &&
+                  "border-b-2 border-black pb-2") ||
+                undefined
+              }
+              link={l.toLowerCase()}
+            >
+              {l}
+            </NavLink>
           </li>
         ))}
         <CgClose
