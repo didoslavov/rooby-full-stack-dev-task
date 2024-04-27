@@ -18,7 +18,7 @@ import avatar3 from "/public/clients/lola.svg";
 import avatar4 from "/public/clients/nellie.svg";
 import details from "/public/blog/details.svg";
 
-export const posts = [
+const posts = [
   {
     id: 1,
     tag: "service",
@@ -113,7 +113,7 @@ export const posts = [
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
         ],
       },
-      image: sales1,
+      image: service1,
       quote: {
         paragraph:
           "“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident”",
@@ -132,7 +132,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar2,
+      avatar: avatar3,
       position: "Founder & CEO",
     },
     image: details,
@@ -171,7 +171,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar2,
+      avatar: avatar,
       position: "Founder & CEO",
     },
     image: details,
@@ -210,7 +210,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar2,
+      avatar: avatar4,
       position: "Founder & CEO",
     },
     image: details,
@@ -250,7 +250,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar2,
+      avatar: avatar,
       position: "Founder & CEO",
     },
     image: details,
@@ -289,7 +289,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar,
+      avatar: avatar1,
       position: "Founder & CEO",
     },
     image: details,
@@ -367,7 +367,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar1,
+      avatar: avatar3,
       position: "Founder & CEO",
     },
     image: details,
@@ -406,7 +406,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar,
+      avatar: avatar4,
       position: "Founder & CEO",
     },
     image: details,
@@ -445,7 +445,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar1,
+      avatar: avatar,
       position: "Founder & CEO",
     },
     image: details,
@@ -524,7 +524,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar,
+      avatar: avatar2,
       position: "Founder & CEO",
     },
     image: details,
@@ -563,7 +563,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar1,
+      avatar: avatar3,
       position: "Founder & CEO",
     },
     image: details,
@@ -602,7 +602,7 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar,
+      avatar: avatar4,
       position: "Founder & CEO",
     },
     image: details,
@@ -647,3 +647,31 @@ export const posts = [
     image: details,
   },
 ];
+
+export function getAllPosts() {
+  return posts;
+}
+
+export function getHomePosts() {
+  return posts.slice(0, 2);
+}
+
+export function getSalesPosts() {
+  return posts.filter((p) => p.tag === "news");
+}
+
+export function getMarketingPosts() {
+  return posts.filter((p) => p.tag === "marketing");
+}
+
+export function getServicePosts() {
+  return posts.filter((p) => p.tag === "service");
+}
+
+export function getProductPosts() {
+  return posts.filter((p) => p.tag === "product");
+}
+
+export function getNewsPosts() {
+  return posts.filter((p) => p.tag === "news");
+}
