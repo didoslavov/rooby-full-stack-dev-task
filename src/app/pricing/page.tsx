@@ -1,4 +1,4 @@
-import Offers from "@/components/layout/Pricing/Offers/Offers";
+import Offers from "@/components/layout/Pricing/Offers";
 import Heading from "@/components/ui/Heading";
 
 export default function Pricing() {
