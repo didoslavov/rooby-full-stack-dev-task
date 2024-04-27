@@ -7,7 +7,7 @@ function NavContainer({ data }: { data: { title: string; links: string[] } }) {
       <Heading>
         <h6 className="pb-[13px] text-base">{data.title}</h6>
       </Heading>
-      <ul className="flex w-fit flex-col text-sm">
+      <ul className="flex w-fit flex-col text-nowrap text-sm">
         {data.links.map((l, i) => (
           <li
             key={i}
