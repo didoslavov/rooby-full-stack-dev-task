@@ -13,11 +13,11 @@ const logos = [google, atlassian, canon, walmart, amazon];
 
 function Hero() {
   return (
-    <section className="col-start-1 col-end-13 grid grid-cols-12 items-center justify-center justify-items-center p-4 sm:col-start-2 sm:col-end-12 md:col-start-1 md:col-end-13 md:py-20 md:pl-4 2xl:col-start-2 2xl:col-end-13 2xl:gap-x-20">
+    <section className="col-start-1 col-end-13 grid grid-cols-12 items-center justify-center justify-items-center py-4 pl-4 sm:col-start-2 sm:col-end-12 md:col-start-1 md:col-end-13 md:py-20 md:pl-4 2xl:col-start-2 2xl:col-end-13 2xl:gap-x-20">
       <Image
         src={heroImage}
         alt="Dashboard image"
-        className="col-span-full row-start-4 md:col-span-full md:col-start-9 md:row-span-full md:self-start md:justify-self-start xl:col-start-7"
+        className="col-span-full col-start-2 row-start-4 sm:translate-x-20 md:col-span-full md:col-start-9 md:row-span-full md:translate-x-0 md:self-start md:justify-self-start xl:col-start-7 xl:justify-self-end"
       />
       <article className="col-start-1 col-end-13 mb-10 grid grid-cols-12 self-start md:col-end-9 md:pb-2 xl:col-end-7 xl:pb-20">
         <Heading className="col-span-full col-start-1 mb-6 text-center md:col-end-11 md:text-start md:text-4xl lg:col-span-full xl:text-6xl">
