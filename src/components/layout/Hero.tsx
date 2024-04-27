@@ -31,7 +31,7 @@ function Hero() {
           cutomers.
         </p>
         <Form />
-        <p className="col-span-full col-start-1 pl-4 text-sm text-main-grey md:col-end-6">
+        <p className="col-span-full col-start-1 pl-4 text-sm text-main-grey md:col-end-6 lg:col-end-7">
           Full access. No credit card required.
         </p>
       </article>
