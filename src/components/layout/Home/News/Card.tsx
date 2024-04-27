@@ -19,7 +19,7 @@ function Card({
 }) {
   return (
     <article className={`${className}`}>
-      <Chip>{card.chip}</Chip>
+      <Chip className="mb-4">{card.chip}</Chip>
       <figure className="group border-t border-main-grey-700">
         <Image
           src={card.img}

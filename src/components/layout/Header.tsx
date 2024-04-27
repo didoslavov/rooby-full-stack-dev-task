@@ -45,7 +45,7 @@ function Header() {
         size="sm"
         link="#"
         type="outline"
-        className="col-span-3 col-start-4 text-nowrap px-5 text-center text-xs shadow-md md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-10"
+        className="col-span-3 col-start-4 text-nowrap px-5 text-center text-xs shadow-md md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-11"
       >
         Log In
       </Button>
@@ -53,7 +53,7 @@ function Header() {
       <Button
         link="#"
         size="sm"
-        className="col-span-3 col-start-7 row-span-1 text-nowrap px-6 text-center shadow-md md:col-start-10 lg:col-start-11"
+        className="col-span-3 col-start-7 row-span-1 text-nowrap px-6 text-center shadow-md md:col-start-10 lg:col-start-12"
         type="full"
       >
         Try for Free

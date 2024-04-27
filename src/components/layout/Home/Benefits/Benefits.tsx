@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "../../ui/Heading";
+import Heading from "../../../ui/Heading";
 import face from "/public/benefits/face.svg";
 import laptop from "/public/benefits/laptop.svg";
 import wound from "/public/benefits/wound.svg";

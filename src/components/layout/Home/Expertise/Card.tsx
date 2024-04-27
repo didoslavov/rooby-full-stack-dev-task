@@ -15,7 +15,9 @@ function Card({ expertise }: { expertise: Expertise }) {
   return (
     <>
       <div className="py-6 md:pt-11 lg:flex-1">
-        <Chip accent>{expertise.chip}</Chip>
+        <Chip accent className="mb-2 sm:mb-8">
+          {expertise.chip}
+        </Chip>
         <Heading className="mb-6">
           <h3 className="-tracking-[0.67px] lg:leading-[58px]">
             {expertise.heading}
