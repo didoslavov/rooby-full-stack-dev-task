@@ -17,9 +17,9 @@ function Card({
   className?: string;
 }) {
   return (
-    <article className="col-span-3 rounded-xl bg-white xl:p-8">
+    <article className="rounded-xl bg-white p-8">
       <div className="mb-6">
-        <div className="mb-2 flex items-center gap-3">
+        <div className="mb-2 flex flex-col items-center gap-3 lg:flex-row">
           <h3 className="text-2xl font-bold">{offer.title}</h3>
           {offer.title.toLowerCase() === "professional" && (
             <Chip offer>recommended</Chip>
@@ -36,15 +36,15 @@ function Card({
       <Button
         link="#"
         size="lg"
-        type="outline"
+        type={offer.title.toLowerCase() === "professional" ? "full" : "outline"}
         className="mb-3 block w-full border border-main-grey-700 border-opacity-25 text-center"
       >
         Try For Free
       </Button>
-      <p className="mb-8 text-nowrap text-center text-sm tracking-[0.16px] text-main-grey-600">
+      <p className="mb-8 text-center text-sm tracking-[0.16px] text-main-grey-600 xl:text-nowrap">
         Free 14-day trial. No credit card required.
       </p>
-      <ul className="flex flex-col gap-4 border-t border-main-grey-700 border-opacity-25 pt-6">
+      <ul className="flex flex-col gap-4 border-t border-main-grey-700 border-opacity-25 pt-6 sm:items-center xl:items-start">
         {offer.benefits.map((b, i) => (
           <div key={i} className="flex items-center gap-3">
             <Image
