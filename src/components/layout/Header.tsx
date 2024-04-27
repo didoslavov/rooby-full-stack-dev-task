@@ -40,7 +40,7 @@ function Header() {
                   "border-b-2 border-black pb-2") ||
                 undefined
               }
-              link={l.toLowerCase()}
+              link={"/" + l.toLowerCase()}
             >
               {l}
             </NavLink>

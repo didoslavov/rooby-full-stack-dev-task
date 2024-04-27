@@ -1,6 +1,6 @@
 import Heading from "@/components/ui/Heading";
 import MainLink from "@/components/ui/MainLink";
-import React, { Fragment } from "react";
+import React from "react";
 import Card from "./Card";
 import meeting from "/public/news/meeting.svg";
 import urban from "/public/news/urban.svg";
@@ -32,7 +32,9 @@ function News() {
         </h2>
       </Heading>
       <div className="col-start-2 col-end-3 self-end justify-self-start text-nowrap tracking-[0.43px] md:col-start-10 md:col-end-12 md:text-xl lg:text-end xl:col-start-11">
-        <MainLink active>See all</MainLink>
+        <MainLink link="#" active>
+          See all
+        </MainLink>
       </div>
       <Card
         card={cards[0]}

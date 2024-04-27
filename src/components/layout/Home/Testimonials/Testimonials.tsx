@@ -35,7 +35,9 @@ function Testimonials() {
         </h2>
       </Heading>
       <div className="col-start-2 col-end-3 self-end justify-self-start text-nowrap tracking-[0.43px] md:col-start-10 md:col-end-12 md:text-xl lg:text-end xl:col-start-11">
-        <MainLink active>See all</MainLink>
+        <MainLink link="#" active>
+          See all
+        </MainLink>
       </div>
       <article className="col-start-2 col-end-12 flex flex-col gap-9 md:flex-row md:gap-7">
         <Card card={cards[0]} />

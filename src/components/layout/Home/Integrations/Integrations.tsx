@@ -36,7 +36,7 @@ function Integrations() {
         <Logo src={teams} className="md:col-span-1" />
       </div>
       <div className="col-start-2 col-end-12 py-1 text-center tracking-[0.51px] sm:col-start-4 sm:col-end-11 md:text-2xl lg:col-start-5 lg:col-end-9">
-        <MainLink>See all apps and extensions</MainLink>
+        <MainLink link="#">See all apps and extensions</MainLink>
       </div>
     </section>
   );
