@@ -1,7 +1,6 @@
 import { BiChevronRight } from "react-icons/bi";
 import React from "react";
 import Heading from "./Heading";
-import Link from "next/link";
 import Button from "./Button";
 
 function Banner() {
