@@ -22,20 +22,30 @@ export const posts = [
   {
     id: 1,
     tag: "service",
-    title: "How To Deliver a Successful Product Launch 1",
+    title: "How To Deliver a Successful Product Launch",
     date: "2024-09-05",
     content: {
-      image: meeting,
       main: {
         intro:
+          "The Psychology of Short-Form Content: Why We Love Bite-Sized Videos. The Psychology of Short-Form Content: Why We Love Bite-Sized Videos. The Psychology of Short-Form Content: Why We Love Bite-Sized Videos",
+        heading: "What is a sales funnel?",
+        text: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
+        ],
+      },
+      image: meeting,
+      quote: {
+        paragraph:
           "“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident”",
-        author: "Matthew Barker",
+        author: "Joshua Nash",
       },
       sub: {
         heading: "What is a sales funnel?",
-        pre: "In order to fully answer the question “What is a sales funnel?”, we need to tackle the different steps of the funnel. While different organizations have their own ways of managing and naming the sales process and customer touchpoints, these are usually structured into three distinct stages.",
+        intro:
+          "In order to fully answer the question “What is a sales funnel?”, we need to tackle the different steps of the funnel. While different organizations have their own ways of managing and naming the sales process and customer touchpoints, these are usually structured into three distinct stages.",
         subheading: "1. Top of the sales funnel: Awareness and discovery",
-        paragraphs: [
+        text: [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
         ],
@@ -43,34 +53,38 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar,
+      avatar: avatar2,
       position: "Founder & CEO",
-      links: {
-        facebook: "",
-        twitter: "",
-        linkedin: "",
-        other: "",
-      },
     },
     image: details,
   },
   {
     id: 2,
     tag: "service",
-    title: "What Makes an Authentic Employee Profile, and Why Does It Matter?",
+    title: "How To Do Representation in Marketing the Right Way ",
     date: "2023-09-07",
     content: {
-      image: urban,
       main: {
         intro:
+          "The Psychology of Short-Form Content: Why We Love Bite-Sized Videos. The Psychology of Short-Form Content: Why We Love Bite-Sized Videos. The Psychology of Short-Form Content: Why We Love Bite-Sized Videos",
+        heading: "What is a sales funnel?",
+        text: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
+        ],
+      },
+      image: urban,
+      quote: {
+        paragraph:
           "“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident”",
         author: "Ivan Neshev",
       },
       sub: {
         heading: "What is a sales funnel?",
-        pre: "In order to fully answer the question “What is a sales funnel?”, we need to tackle the different steps of the funnel. While different organizations have their own ways of managing and naming the sales process and customer touchpoints, these are usually structured into three distinct stages.",
+        intro:
+          "In order to fully answer the question “What is a sales funnel?”, we need to tackle the different steps of the funnel. While different organizations have their own ways of managing and naming the sales process and customer touchpoints, these are usually structured into three distinct stages.",
         subheading: "1. Top of the sales funnel: Awareness and discovery",
-        paragraphs: [
+        text: [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
         ],
@@ -78,14 +92,8 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar,
+      avatar: avatar4,
       position: "Founder & CEO",
-      links: {
-        facebook: "",
-        twitter: "",
-        linkedin: "",
-        other: "",
-      },
     },
     image: details,
   },
@@ -94,19 +102,29 @@ export const posts = [
     tag: "service",
     title:
       "The 2024 State of Marketing & Trends Report: Data from 1400+ Global Marketers",
-    date: "2023-09-05",
+    date: "2024-09-05",
     content: {
-      image: service1,
       main: {
         intro:
+          "The Psychology of Short-Form Content: Why We Love Bite-Sized Videos. The Psychology of Short-Form Content: Why We Love Bite-Sized Videos. The Psychology of Short-Form Content: Why We Love Bite-Sized Videos",
+        heading: "What is a sales funnel?",
+        text: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
+        ],
+      },
+      image: sales1,
+      quote: {
+        paragraph:
           "“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident”",
         author: "Maxwell Iskiev",
       },
       sub: {
         heading: "What is a sales funnel?",
-        pre: "In order to fully answer the question “What is a sales funnel?”, we need to tackle the different steps of the funnel. While different organizations have their own ways of managing and naming the sales process and customer touchpoints, these are usually structured into three distinct stages.",
+        intro:
+          "In order to fully answer the question “What is a sales funnel?”, we need to tackle the different steps of the funnel. While different organizations have their own ways of managing and naming the sales process and customer touchpoints, these are usually structured into three distinct stages.",
         subheading: "1. Top of the sales funnel: Awareness and discovery",
-        paragraphs: [
+        text: [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
         ],
@@ -114,14 +132,8 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar,
+      avatar: avatar2,
       position: "Founder & CEO",
-      links: {
-        facebook: "",
-        twitter: "",
-        linkedin: "",
-        other: "",
-      },
     },
     image: details,
   },
@@ -131,17 +143,27 @@ export const posts = [
     title: "Learn from My Mistakes: 7 Digital Course Pitfalls to Skip",
     date: "2024-06-29",
     content: {
-      image: news1,
       main: {
         intro:
+          "The Psychology of Short-Form Content: Why We Love Bite-Sized Videos. The Psychology of Short-Form Content: Why We Love Bite-Sized Videos. The Psychology of Short-Form Content: Why We Love Bite-Sized Videos",
+        heading: "What is a sales funnel?",
+        text: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
+        ],
+      },
+      image: news1,
+      quote: {
+        paragraph:
           "“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident”",
         author: "Joshua Nash",
       },
       sub: {
         heading: "What is a sales funnel?",
-        pre: "In order to fully answer the question “What is a sales funnel?”, we need to tackle the different steps of the funnel. While different organizations have their own ways of managing and naming the sales process and customer touchpoints, these are usually structured into three distinct stages.",
+        intro:
+          "In order to fully answer the question “What is a sales funnel?”, we need to tackle the different steps of the funnel. While different organizations have their own ways of managing and naming the sales process and customer touchpoints, these are usually structured into three distinct stages.",
         subheading: "1. Top of the sales funnel: Awareness and discovery",
-        paragraphs: [
+        text: [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
         ],
@@ -149,14 +171,8 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar,
+      avatar: avatar2,
       position: "Founder & CEO",
-      links: {
-        facebook: "",
-        twitter: "",
-        linkedin: "",
-        other: "",
-      },
     },
     image: details,
   },
@@ -166,17 +182,27 @@ export const posts = [
     title: "How To Do Representation in Marketing the Right Way ",
     date: "2022-03-20",
     content: {
-      image: sales1,
       main: {
         intro:
+          "The Psychology of Short-Form Content: Why We Love Bite-Sized Videos. The Psychology of Short-Form Content: Why We Love Bite-Sized Videos. The Psychology of Short-Form Content: Why We Love Bite-Sized Videos",
+        heading: "What is a sales funnel?",
+        text: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
+        ],
+      },
+      image: sales1,
+      quote: {
+        paragraph:
           "“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident”",
         author: "Bill Holloway",
       },
       sub: {
         heading: "What is a sales funnel?",
-        pre: "In order to fully answer the question “What is a sales funnel?”, we need to tackle the different steps of the funnel. While different organizations have their own ways of managing and naming the sales process and customer touchpoints, these are usually structured into three distinct stages.",
+        intro:
+          "In order to fully answer the question “What is a sales funnel?”, we need to tackle the different steps of the funnel. While different organizations have their own ways of managing and naming the sales process and customer touchpoints, these are usually structured into three distinct stages.",
         subheading: "1. Top of the sales funnel: Awareness and discovery",
-        paragraphs: [
+        text: [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
         ],
@@ -184,14 +210,8 @@ export const posts = [
     },
     publisher: {
       name: "Joshua Nash",
-      avatar: avatar,
+      avatar: avatar2,
       position: "Founder & CEO",
-      links: {
-        facebook: "",
-        twitter: "",
-        linkedin: "",
-        other: "",
-      },
     },
     image: details,
   },
