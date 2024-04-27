@@ -9,7 +9,7 @@ import Banner from "@/components/ui/Banner";
 
 export default function Home() {
   return (
-    <div className="col-start-1 col-end-13 grid max-w-[1440px] grid-cols-12 gap-x-[30px] overflow-hidden bg-main-grey-100">
+    <div className="col-start-1 col-end-13 grid grid-cols-12 gap-x-[30px] overflow-hidden bg-main-grey-100">
       <Hero />
       <Benefits />
       <Expertise />
