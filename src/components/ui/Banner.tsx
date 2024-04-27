@@ -2,6 +2,7 @@ import { BiChevronRight } from "react-icons/bi";
 import React from "react";
 import Heading from "./Heading";
 import Link from "next/link";
+import Button from "./Button";
 
 function Banner() {
   return (
@@ -19,10 +20,17 @@ function Banner() {
         </p>
       </div>
       <div className="pointer-events-none z-30 col-start-8 col-end-13 row-start-1 bg-main-yellow pr-[5%]"></div>
-      <div className="pointer-events-none absolute -bottom-[30%] -right-[5%] z-50 flex h-72 w-80 flex-col items-center rounded-[50%] bg-main-green transition-all duration-500 hover:bg-main-green-100 sm:-bottom-[40%] md:-bottom-[60%] md:-right-[10%] md:h-96 md:w-96 xl:-bottom-[70%] xl:-right-[10%] xl:h-[800px] xl:w-[800px] xl:translate-y-20">
-        <div className="peer pointer-events-auto mb-6 mt-10 flex w-fit items-center rounded-lg bg-white px-4 py-2 text-sm font-bold text-black drop-shadow-2xl transition-all duration-500 hover:cursor-pointer hover:bg-main-green xl:mr-20 xl:mt-32 xl:gap-4 xl:px-8 xl:py-5 xl:text-lg xl:-tracking-[0.25px]">
-          <Link href="#">Try For Free</Link>
-          <BiChevronRight size={28} />
+      <div className="pointer-events-none absolute -bottom-[30%] -right-[5%] z-50 flex h-72 w-80 flex-col items-center rounded-[50%] bg-main-green transition-all duration-500 hover:bg-main-green-100 sm:-bottom-[40%] md:-bottom-[60%] md:-right-[10%] md:h-96 md:w-96 lg:right-0 xl:-bottom-[70%] xl:-right-[10%] xl:h-[800px] xl:w-[800px] xl:translate-y-20">
+        <div className="group peer pointer-events-auto mb-6 mt-10 flex w-fit items-center rounded-lg bg-white px-2 py-1 text-sm font-bold text-black drop-shadow-2xl transition-all duration-500 hover:cursor-pointer hover:bg-main-blue xl:mr-20 xl:mt-32 xl:gap-4 xl:px-6 xl:py-1 xl:text-lg xl:-tracking-[0.25px]">
+          <Button
+            link="#"
+            type="outline"
+            className="group-hover:bg-main-blue group-hover:text-white lg:py-1 xl:py-4"
+            size="lg"
+          >
+            Try For Free
+          </Button>
+          <BiChevronRight size={28} className="group-hover:text-white" />
         </div>
         <p className="text-start text-xs peer-hover:text-black xl:mr-20">
           Full access. No credit card required.
