@@ -1,27 +1,11 @@
 import Heading from "@/components/ui/Heading";
 import MainLink from "@/components/ui/MainLink";
 import React from "react";
-import Card from "./Card";
-import meeting from "/public/news/meeting.svg";
-import urban from "/public/news/urban.svg";
+import { posts } from "@/data/blogPosts";
+import { BlogPost } from "@/types/blog";
+import PostCard from "@/components/ui/PostCard";
 
-const cards = [
-  {
-    chip: "service",
-    img: meeting,
-    heading: "How To Deliver a Successful Product Launch",
-    publishedAt: "05 Sep 2024",
-    author: "Joshua Nash",
-  },
-  {
-    chip: "service",
-    img: urban,
-    heading:
-      "What Makes an Authentic Employee Profile, and Why Does It Matter?",
-    publishedAt: "07 Sep 2023",
-    author: "Ivan Neshev",
-  },
-];
+const cards: BlogPost[] = posts.slice(0, 2);
 
 function News() {
   return (
@@ -36,11 +20,11 @@ function News() {
           See all
         </MainLink>
       </div>
-      <Card
+      <PostCard
         card={cards[0]}
         className="col-start-2 col-end-12 mb-4 sm:col-start-2 sm:col-end-7"
       />
-      <Card
+      <PostCard
         card={cards[1]}
         className="col-start-2 col-end-12 mb-4 sm:col-start-7 sm:col-end-12"
       />
