@@ -3,13 +3,7 @@ import Heading from "../../ui/Heading";
 import Image from "next/image";
 import heroImage from "/public/hero/hero.svg";
 import Form from "../../ui/Form";
-import google from "/public/hero/google.svg";
-import atlassian from "/public/hero/atlassian.svg";
-import canon from "/public/hero/canon.svg";
-import walmart from "/public/hero/walmart.svg";
-import amazon from "/public/hero/amazon.svg";
-
-const logos = [google, atlassian, canon, walmart, amazon];
+import Partners from "@/components/ui/Partners";
 
 function Hero() {
   return (
@@ -35,19 +29,7 @@ function Hero() {
           Full access. No credit card required.
         </p>
       </article>
-      <p className="col-span-full col-start-1 row-start-2 justify-self-start font-medium -tracking-[0.22px] md:col-end-4 md:row-auto ">
-        Trusted by 1,000+ customers
-      </p>
-      <div className="col-span-full col-start-1 row-start-3 flex flex-wrap justify-between gap-3 pb-4 pt-4 md:col-start-4 md:col-end-13 md:row-auto md:gap-8 lg:flex-nowrap xl:col-start-4 xl:col-end-12 xl:gap-16">
-        {logos.map((l, i) => (
-          <Image
-            src={l}
-            key={i}
-            alt="Company logo"
-            className={`${i === logos.length - 1 && "flex-1  md:flex-grow-0"}`}
-          />
-        ))}
-      </div>
+      <Partners>Trusted by 1,000+ customers</Partners>
     </section>
   );
 }
