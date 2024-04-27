@@ -1,11 +1,11 @@
 import Heading from "@/components/ui/Heading";
 import MainLink from "@/components/ui/MainLink";
 import React from "react";
-import { posts } from "@/data/blogPosts";
+import { getHomePosts } from "@/data/blogPosts";
 import { BlogPost } from "@/types/blog";
 import PostCard from "@/components/ui/PostCard";
 
-const cards: BlogPost[] = posts.slice(0, 2);
+const posts: BlogPost[] = getHomePosts();
 
 function News() {
   return (
@@ -21,11 +21,11 @@ function News() {
         </MainLink>
       </div>
       <PostCard
-        card={cards[0]}
+        post={posts[0]}
         className="col-start-2 col-end-12 mb-4 sm:col-start-2 sm:col-end-7"
       />
       <PostCard
-        card={cards[1]}
+        post={posts[1]}
         className="col-start-2 col-end-12 mb-4 sm:col-start-7 sm:col-end-12"
       />
     </section>
