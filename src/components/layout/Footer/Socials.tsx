@@ -1,8 +1,6 @@
 import Image from "next/image";
 import logo from "/public/logo.svg";
-import twitter from "/public/footer/twitter.svg";
-import facebook from "/public/footer/facebook.svg";
-import linkedin from "/public/footer/linkedin.svg";
+import SocialIcons from "@/components/ui/SocialIcons";
 
 function Socials() {
   return (
@@ -15,11 +13,7 @@ function Socials() {
           SMBs
         </p>
       </div>
-      <div className="flex gap-4">
-        <Image src={twitter} alt="Twitter Logo" />
-        <Image src={facebook} alt="Facebook Logo" />
-        <Image src={linkedin} alt="Linked In Logo" />
-      </div>
+      <SocialIcons />
     </article>
   );
 }
