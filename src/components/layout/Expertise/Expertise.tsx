@@ -3,6 +3,7 @@ import marketing from "/public/expertise/marketing.svg";
 import help from "/public/expertise/help.svg";
 import Card from "./Card";
 import Link from "next/link";
+import Button from "@/components/ui/Button";
 
 const cards = [
   {
@@ -54,16 +55,18 @@ function Expertise() {
           >
             <Card expertise={c} />
             {i === 1 && (
-              <div className="pointer-events-none absolute -bottom-10 flex flex-col items-center gap-3 rounded-xl bg-main-blue py-3 pl-6 pr-3 text-base text-white hover:bg-main-yellow hover:text-black sm:bottom-8 sm:left-10 sm:flex-row md:-bottom-10 md:left-40 lg:-bottom-14 lg:left-56 lg:text-lg xl:bottom-10 xl:left-14">
+              <div className="pointer-events-none absolute -bottom-10 flex flex-col items-center gap-3 rounded-xl bg-main-blue py-2 pl-6 pr-3 text-base text-white transition-all duration-500 hover:bg-main-yellow hover:text-black sm:bottom-8 sm:left-10 sm:flex-row md:-bottom-10 md:left-40 lg:-bottom-14 lg:left-56 lg:text-lg xl:bottom-10 xl:left-14">
                 <p className=" font-bold -tracking-[0.25px]">
                   Automate your sales & marketing
                 </p>
-                <Link
-                  href="#"
-                  className="pointer-events-auto rounded-lg bg-main-green p-2 font-bold -tracking-[0.25px] hover:bg-main-green-100 lg:pb-4 lg:pl-5 lg:pr-[18px] lg:pt-4"
+                <Button
+                  link="#"
+                  size="lg"
+                  type="accent"
+                  className="pointer-events-auto px-2 font-bold lg:pl-5 lg:pr-[18px]"
                 >
                   Start now
-                </Link>
+                </Button>
               </div>
             )}
           </article>
