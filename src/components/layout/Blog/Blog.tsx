@@ -18,11 +18,11 @@ function Blog() {
             <span className="text-main-grey-700">from our experts</span>
           </h1>
         </Heading>
-        <ul className="col-start-2 row-start-2 flex gap-6 text-nowrap">
+        <ul className="col-start-2 row-start-2 flex gap-10 text-nowrap">
           <MainLink
             link="/blog"
             plane
-            className={`${pathname === "/blog" && "border-b-2 border-main-green"}`}
+            className={`${pathname === "/blog" ? "border-b-2 border-main-green text-black" : "text-main-grey-600"}`}
           >
             All articles
           </MainLink>
@@ -33,7 +33,7 @@ function Blog() {
                   ? `/blog/${l.split(" ").join("-").toLowerCase()}`
                   : `/blog/${l.split(" ")[0].toLowerCase()}`
               }
-              className={`${pathname.includes(`${l.split(" ")[0].toLowerCase()}`) && "border-b-2 border-main-green"}`}
+              className={`${pathname.includes(`${l.split(" ")[0].toLowerCase()}`) ? "border-b-2 border-main-green text-black" : "text-main-grey-600"}`}
               plane
               key={i}
             >
