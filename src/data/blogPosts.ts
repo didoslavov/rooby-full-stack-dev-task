@@ -655,16 +655,18 @@ const navLinks = [
   { id: 5, link: "News" },
 ];
 
-export function getAllPosts() {
-  return posts;
-}
-
 export function getHomePosts() {
   return posts.slice(0, 2);
 }
 
-export function getFilteredPosts(filter: string) {
-  return posts.filter((p) => p.tag === filter);
+/**
+ * @param {string} filter If omited fn returns all posts.
+ * @param {string} filter If passed fn returns posts based on post tag.
+ * @param {string} filter Available filter options are 'sales', 'marketing', 'service', 'product', 'news'
+ */
+
+export function getPosts(filter?: string) {
+  return filter ? posts.filter((p) => p.tag === filter) : posts;
 }
 
 export function getNavLinks() {

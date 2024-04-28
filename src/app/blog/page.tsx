@@ -1,7 +1,7 @@
 import PostCard from "@/components/ui/PostCard";
-import { getAllPosts } from "@/data/blogPosts";
+import { getPosts } from "@/data/blogPosts";
 
-const posts = getAllPosts();
+const posts = getPosts();
 
 function page() {
   return (
