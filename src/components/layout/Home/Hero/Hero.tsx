@@ -1,8 +1,8 @@
 import React from "react";
-import Heading from "../../ui/Heading";
+import Heading from "../../../ui/Heading";
 import Image from "next/image";
 import heroImage from "/public/hero/hero.svg";
-import Form from "../../ui/Form";
+import Form from "./Form";
 import Partners from "@/components/ui/Partners";
 
 function Hero() {

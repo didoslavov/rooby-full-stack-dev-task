@@ -1,7 +1,9 @@
 "use client";
 
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
-import Notification from "./Notification";
+import Notification from "../../../ui/Notification";
+import TextInput from "@/components/ui/TextInput";
+import SubmitInput from "@/components/ui/SubmitInput";
 
 function Form() {
   const [email, setPhone] = useState("");
@@ -14,7 +16,7 @@ function Form() {
     if (!email.trim()) {
       setNotification({
         type: "error",
-        text: "Моля, въведете валиден телефонен номер!",
+        text: "Please enter your email",
       });
       return;
     }
@@ -65,19 +67,16 @@ function Form() {
         onSubmit={handleSubmit}
       >
         <div className="col-start-1 col-end-11 grid grid-cols-12 rounded-[12px] bg-white p-3 shadow-sm">
-          <input
-            type="text"
+          <TextInput
             name="email"
-            id="email"
             placeholder="Enter your email"
-            className="col-start-1 col-end-9 flex-1 pl-2 text-main-grey outline-none transition-all duration-300 placeholder:text-lg placeholder:font-medium placeholder:-tracking-[0.25px] placeholder:text-main-grey-700"
-            onChange={onEmailChange}
+            className="col-start-1 col-end-9 flex-1"
+            onChangeHandler={onEmailChange}
             value={email}
           />
-          <input
-            type="submit"
+          <SubmitInput
             value="Try for free"
-            className="col-start-9 col-end-13 rounded-[8px] bg-main-blue px-2 py-1 text-[17px] font-semibold leading-[40px] tracking-tight text-white transition-all duration-75 hover:scale-105 hover:cursor-pointer hover:bg-main-yellow hover:text-main-blue"
+            className="col-start-9 col-end-13"
           />
         </div>
       </form>
