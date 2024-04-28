@@ -2,9 +2,10 @@
 
 import Heading from "@/components/ui/Heading";
 import MainLink from "@/components/ui/MainLink";
+import { getNavLinks } from "@/data/blogPosts";
 import { usePathname } from "next/navigation";
 
-const links = ["Sales", "Marketing", "Service", "Product", "News"];
+const links = getNavLinks();
 
 function Blog() {
   const pathname = usePathname();
@@ -26,18 +27,18 @@ function Blog() {
           >
             All articles
           </MainLink>
-          {links.map((l, i) => (
+          {links.map((l) => (
             <MainLink
               link={
-                l.split(" ").length > 1
-                  ? `/blog/${l.split(" ").join("-").toLowerCase()}`
-                  : `/blog/${l.split(" ")[0].toLowerCase()}`
+                l.link.split(" ").length > 1
+                  ? `/blog/${l.link.split(" ").join("-").toLowerCase()}`
+                  : `/blog/${l.link.split(" ")[0].toLowerCase()}`
               }
-              className={`${pathname.includes(`${l.split(" ")[0].toLowerCase()}`) ? "border-b-2 border-main-green text-black" : "text-main-grey-600"} w-fit`}
+              className={`${pathname.includes(`${l.link.split(" ")[0].toLowerCase()}`) ? "border-b-2 border-main-green text-black" : "text-main-grey-600"} w-fit`}
               plane
-              key={i}
+              key={l.id}
             >
-              {l}
+              {l.link}
             </MainLink>
           ))}
         </ul>

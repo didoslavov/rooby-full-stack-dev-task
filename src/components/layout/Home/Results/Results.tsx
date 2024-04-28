@@ -1,26 +1,8 @@
 import Heading from "@/components/ui/Heading";
-import nellie from "/public/clients/nellie.svg";
-import lawrence from "/public/clients/lawrence.svg";
 import Card from "./Card";
+import { getResultsData } from "@/data/homeData";
 
-const cards = [
-  {
-    result: "$2.5 M",
-    type: "Generate sales",
-    text: "Using Кирилица CRM is one of the best decisions we’ve ever made. We’ve seen our annual revenue explode, and the outlook just keeps getting sunnier.",
-    img: nellie,
-    name: "Nellie Foster",
-    position: "Founder & CEO, Foster Business Strategies",
-  },
-  {
-    result: "45%",
-    type: "Grew revenue",
-    text: "Yoora is created for sales people. It’s the kind of software that just works. I don’t have to try to make it work. It already does. It’s just perfect.",
-    img: lawrence,
-    name: "Lawrence Gibbs",
-    position: "Marketing Director",
-  },
-];
+const cards = getResultsData();
 
 function Results() {
   return (

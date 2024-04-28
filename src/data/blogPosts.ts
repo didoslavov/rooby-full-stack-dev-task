@@ -647,6 +647,14 @@ const posts = [
   },
 ];
 
+const navLinks = [
+  { id: 1, link: "Sales" },
+  { id: 2, link: "Marketing" },
+  { id: 3, link: "Service" },
+  { id: 4, link: "Product" },
+  { id: 5, link: "News" },
+];
+
 export function getAllPosts() {
   return posts;
 }
@@ -655,22 +663,10 @@ export function getHomePosts() {
   return posts.slice(0, 2);
 }
 
-export function getSalesPosts() {
-  return posts.filter((p) => p.tag === "news");
+export function getFilteredPosts(filter: string) {
+  return posts.filter((p) => p.tag === filter);
 }
 
-export function getMarketingPosts() {
-  return posts.filter((p) => p.tag === "marketing");
-}
-
-export function getServicePosts() {
-  return posts.filter((p) => p.tag === "service");
-}
-
-export function getProductPosts() {
-  return posts.filter((p) => p.tag === "product");
-}
-
-export function getNewsPosts() {
-  return posts.filter((p) => p.tag === "news");
+export function getNavLinks() {
+  return navLinks;
 }

@@ -2,33 +2,44 @@ export default function getFooterLinks(title: string) {
   const links = [
     {
       title: "Company",
-      links: ["About", "Pricing", "Jobs", "Blog", "Careers"],
+      links: [
+        { id: 1, link: "About" },
+        { id: 2, link: "Pricing" },
+        { id: 3, link: "Jobs" },
+        { id: 4, link: "Blog" },
+        { id: 5, link: "Careers" },
+      ],
     },
     {
       title: "Product",
       links: [
-        "Sales software",
-        "Features",
-        "Privacy",
-        "Marketplace",
-        "Status",
-        "API",
+        { id: 1, link: "Sales software" },
+        { id: 2, link: "Features" },
+        { id: 3, link: "Privacy" },
+        { id: 4, link: "Marketplace" },
+        { id: 5, link: "Status" },
+        { id: 6, link: "API" },
       ],
     },
     {
       title: "Discover",
       links: [
-        "Partner Program",
-        "Get our newsletter",
-        "Sales Pipeline",
-        "What is CRM",
-        "CRM Comparison",
-        "CarResourceseers",
+        { id: 1, link: "Partner Program" },
+        { id: 2, link: "Get our newsletter" },
+        { id: 3, link: "Sales Pipeline" },
+        { id: 4, link: "What is CRM" },
+        { id: 5, link: "CRM Comparison" },
+        { id: 6, link: "CarResourceseers" },
       ],
     },
     {
       title: "Help Center",
-      links: ["Community", "Knowledge Base", "Academy", "Support"],
+      links: [
+        { id: 1, link: "Community" },
+        { id: 2, link: "Knowledge Base" },
+        { id: 3, link: "Academy" },
+        { id: 4, link: "Support" },
+      ],
     },
   ];
 

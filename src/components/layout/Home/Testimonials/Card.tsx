@@ -6,7 +6,13 @@ import { VscQuote } from "react-icons/vsc";
 function Card({
   card,
 }: {
-  card: { text: string; img: StaticImageData; name: string; position: string };
+  card: {
+    id: number;
+    text: string;
+    img: StaticImageData;
+    name: string;
+    position: string;
+  };
 }) {
   return (
     <div className="flex-1">

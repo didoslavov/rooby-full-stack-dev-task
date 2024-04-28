@@ -1,30 +1,8 @@
-import React from "react";
+import { getBenefitsData } from "@/data/homeData";
 import Heading from "../../../ui/Heading";
-import face from "/public/benefits/face.svg";
-import laptop from "/public/benefits/laptop.svg";
-import wound from "/public/benefits/wound.svg";
 import Card from "./Card";
 
-const cards = [
-  {
-    icon: face,
-    heading: "Lead customers to happiness",
-    description:
-      "Rooody Support helps you provide personalized support when and where customers need it, so customers stay happy.",
-  },
-  {
-    icon: laptop,
-    heading: "Support your support",
-    description:
-      "Productive agents are happy agents. Give them all the support tools and information they need to best serve your customers.",
-  },
-  {
-    icon: wound,
-    heading: "Grow without growing pains",
-    description:
-      "Our software is powerful enough to handle the most complex business, yet flexible enough to scale with you as you grow.",
-  },
-];
+const cards = getBenefitsData();
 
 function Benefits() {
   return (
@@ -40,8 +18,8 @@ function Benefits() {
         faster.
       </p>
       <div className="col-start-2 col-end-12 flex flex-col gap-4 sm:col-start-3 sm:col-end-11 md:col-start-4 md:col-end-10 lg:col-start-1 lg:col-end-13 lg:flex-row lg:gap-[9px] lg:px-8 xl:col-start-2 xl:col-end-12 xl:px-0">
-        {cards.map((c, i) => (
-          <div key={i}>
+        {cards.map((c) => (
+          <div key={c.id}>
             <Card card={c} />
           </div>
         ))}

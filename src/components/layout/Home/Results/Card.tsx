@@ -6,6 +6,7 @@ function Card({
   card,
 }: {
   card: {
+    id: number;
     result: string;
     type: string;
     text: string;

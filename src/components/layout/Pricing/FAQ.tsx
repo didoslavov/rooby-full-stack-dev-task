@@ -44,7 +44,7 @@ export default function FAQ() {
 
   return (
     <article className="col-span-full grid grid-cols-12 bg-white px-4 xl:px-0">
-      <Heading className="col-span-full col-start-1 my-11 text-center xl:col-span-6 xl:col-start-2 xl:my-[100px]">
+      <Heading className="col-span-full col-start-1 my-11 text-center xl:col-span-6 xl:col-start-2 xl:my-[100px] xl:text-start">
         <h1 className="xl:text-[64px]">Frequently asked questions</h1>
       </Heading>
       <div className="col-span-full row-start-2 mb-20 flex xl:col-start-4 xl:col-end-12 xl:justify-end">

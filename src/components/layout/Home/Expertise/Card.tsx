@@ -7,7 +7,7 @@ interface Expertise {
   chip: string;
   heading: string;
   description: string;
-  list: string[];
+  list: { id: number; text: string }[];
   img: StaticImageData;
 }
 
@@ -27,15 +27,18 @@ function Card({ expertise }: { expertise: Expertise }) {
           {expertise.description}
         </p>
         <ul className="xl:w-[82%]">
-          {expertise.list.map((li: string, i: number) => (
-            <div key={i} className="mb-6 flex items-start lg:justify-between">
+          {expertise.list.map((li, i) => (
+            <div
+              key={li.id}
+              className="mb-6 flex items-start lg:justify-between"
+            >
               <Image
                 src={check}
                 alt="Check icon"
                 className="mr-2 mt-2 lg:mr-6"
               />
               <li className="text-sm leading-7 tracking-[0.2px] lg:text-lg">
-                {li}
+                {li.text}
               </li>
             </div>
           ))}

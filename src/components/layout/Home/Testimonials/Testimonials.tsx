@@ -1,30 +1,9 @@
 import Heading from "@/components/ui/Heading";
 import MainLink from "@/components/ui/MainLink";
-import lola from "/public/clients/lola.svg";
-import daisy from "/public/clients/daisy.svg";
-import andrew from "/public/clients/andrew.svg";
 import Card from "./Card";
+import { getTestimonialsData } from "@/data/homeData";
 
-const cards = [
-  {
-    text: "The best thing we love about Yoora is it does two-way sync with Google Apps. It has helped us to better organize and keep everything on track.",
-    img: lola,
-    name: "Lola Ross",
-    position: "Marketing Director",
-  },
-  {
-    text: "It has made our sales department more effective and efficient. It’s easy to use and it’s constantly updated. It’s easy to use and it’s constantly updated.",
-    img: daisy,
-    name: "Daisy Phelps",
-    position: "Speaker and Author, Lifeiseasy",
-  },
-  {
-    text: "Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!",
-    img: andrew,
-    name: "Andrew Wilkins",
-    position: "Managing Director, Nirma Studio",
-  },
-];
+const cards = getTestimonialsData();
 
 function Testimonials() {
   return (
