@@ -27,6 +27,7 @@ function Header() {
           alt="Company logo - Rooody"
           width={95}
           height={26}
+          onClick={toggleMobileMenu}
         />
       </Link>
       <ul
