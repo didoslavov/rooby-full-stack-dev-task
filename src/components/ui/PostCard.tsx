@@ -7,16 +7,22 @@ import Link from "next/link";
 import React from "react";
 
 /**
- * @param {boolean} big changes layout of the card.
+ * @prop {boolean} small changes font size of the heading to 24px.
+ * @prop {boolean} medium changes font size of the heading to 32px.
+ * @prop {boolean} big changes layout of the card, Image is outside the container.
  */
 
 function PostCard({
   className,
   post,
+  small,
+  medium,
   big,
 }: {
   className?: string;
   post: BlogPost;
+  small?: boolean;
+  medium?: boolean;
   big?: boolean;
 }) {
   return (
@@ -38,7 +44,7 @@ function PostCard({
           <div className={`${big && "flex flex-col justify-between"}`}>
             <Heading>
               <h3
-                className={`${big ? "mb-[118px] text-[40px] leading-[50px] -tracking-[0.56px]" : "mb-6 text-lg md:leading-[42px] md:-tracking-[0.44px] lg:text-2xl xl:text-[32px]"}`}
+                className={`${big ? "mb-[118px] text-[40px] leading-[50px] -tracking-[0.56px]" : medium ? "mb-6 text-lg md:leading-[42px] md:-tracking-[0.44px] lg:text-2xl xl:text-[32px]" : small ? "mb-8 text-2xl leading-[34px] -tracking-[0.33px]" : "mb-8 mt-4 w-[87%] text-2xl leading-[34px] -tracking-[0.33px]"}`}
               >
                 <Link href="#">{post.title}</Link>
               </h3>
