@@ -28,7 +28,7 @@ function PostCard({
   return (
     <>
       <article
-        className={`${className} ${big && "max-h-[370px] self-center border-b border-t border-main-grey-700"}`}
+        className={`${className} ${big && "self-center border-b border-t border-main-grey-700"}`}
       >
         {post.content.image && (
           <Chip className={`mb-4 ${big && "mt-4"}`}>{post.tag}</Chip>
@@ -44,7 +44,7 @@ function PostCard({
           <div className={`${big && "flex flex-col justify-between"}`}>
             <Heading>
               <h3
-                className={`${big ? "mb-[118px] text-[40px] leading-[50px] -tracking-[0.56px]" : medium ? "mb-6 text-lg md:leading-[42px] md:-tracking-[0.44px] lg:text-2xl xl:text-[32px]" : small ? "mb-8 text-2xl leading-[34px] -tracking-[0.33px]" : "mb-8 mt-4 w-[87%] text-2xl leading-[34px] -tracking-[0.33px]"}`}
+                className={`${big ? "mb-9 text-2xl lg:mb-[118px] lg:text-[40px] lg:leading-[50px] lg:-tracking-[0.56px]" : medium ? "mb-6 text-lg md:leading-[42px] md:-tracking-[0.44px] lg:text-2xl xl:text-[32px]" : small ? "mb-8 text-base sm:text-lg lg:text-2xl lg:leading-[34px] lg:-tracking-[0.33px]" : "mb-8 mt-4 text-base lg:w-[87%] lg:text-2xl lg:leading-[34px] lg:-tracking-[0.33px]"}`}
               >
                 <Link href="#">{post.title}</Link>
               </h3>
@@ -67,7 +67,7 @@ function PostCard({
         <Image
           src={post.content.image}
           alt="Blog image"
-          className="col-start-6 col-end-12 my-6 group-hover:drop-shadow-xl"
+          className="col-start-1 col-end-12 row-start-2 my-6 group-hover:drop-shadow-xl md:col-start-6 md:row-start-1"
         />
       )}
     </>
