@@ -1,9 +1,9 @@
-import { getPosts } from "@/data/blogPosts";
+import PostLayout from "@/components/layout/Blog/PostLayout";
 
 export default function Page({ params }: { params: { slug: string } }) {
-  const blogPosts = getPosts(params.slug);
-
   return (
-    <div className="col-span-full col-start-2">My Post: {params.slug}</div>
+    <div className="col-span-full grid grid-cols-subgrid bg-white py-12 lg:py-[120px]">
+      <PostLayout slug={params.slug} />
+    </div>
   );
 }
