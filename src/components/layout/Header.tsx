@@ -16,7 +16,8 @@ function Header() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMobileMenu = () => setIsOpen(!isOpen);
+  const openMobileNav = () => setIsOpen(true);
+  const closeMobileNav = () => setIsOpen(false);
 
   return (
     <header className="relative col-start-1 col-end-13 grid grid-cols-12 items-center px-4 py-6 md:pl-4 2xl:col-start-2 2xl:col-end-12">
@@ -27,14 +28,14 @@ function Header() {
           alt="Company logo - Rooody"
           width={95}
           height={26}
-          onClick={toggleMobileMenu}
+          onClick={closeMobileNav}
         />
       </Link>
       <ul
         className={`${isOpen ? "fixed right-0 top-0 z-40 flex h-screen w-screen flex-col items-center justify-center gap-10 bg-main-grey-100 text-2xl font-bold text-main-blue-900" : "hidden"} col-start-3 col-end-8 text-sm md:gap-4 lg:flex xl:gap-9`}
       >
         {navLinks.map((l, i) => (
-          <li onClick={toggleMobileMenu} key={i} className="relative px-1 py-1">
+          <li onClick={closeMobileNav} key={i} className="relative px-1 py-1">
             <NavLink
               className={
                 (pathname === `/${l.toLowerCase()}` &&
@@ -50,7 +51,7 @@ function Header() {
         <CgClose
           size={30}
           className="absolute right-4 top-6 text-main-blue-900 hover:cursor-pointer lg:hidden"
-          onClick={toggleMobileMenu}
+          onClick={isOpen ? closeMobileNav : openMobileNav}
         />
       </ul>
       <Button
@@ -71,7 +72,7 @@ function Header() {
         Try for Free
       </Button>
       <AiOutlineMenu
-        onClick={toggleMobileMenu}
+        onClick={isOpen ? closeMobileNav : openMobileNav}
         size={30}
         className="col-start-12 text-main-blue-900 hover:cursor-pointer md:col-start-13 lg:hidden"
       />
