@@ -218,8 +218,7 @@ const posts = [
   {
     id: 6,
     tag: "service",
-    title:
-      "What Makes an Authentic Employee Profile, and Why Does It Matter? 2",
+    title: "The Psychology of Short-Form Content: Why We Love...",
     date: "2024-09-07",
     content: {
       main: {
