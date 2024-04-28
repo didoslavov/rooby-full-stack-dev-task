@@ -9,8 +9,8 @@ function TextInput({
 }: {
   name: string;
   placeholder: string;
-  className: string;
-  onChangeHandler: ChangeEventHandler<HTMLInputElement>;
+  className?: string;
+  onChangeHandler?: ChangeEventHandler<HTMLInputElement>;
   value: string;
 }) {
   return (
@@ -19,7 +19,7 @@ function TextInput({
       name={name}
       id={name}
       placeholder={placeholder}
-      className="col-start-1 col-end-9 flex-1 pl-2 text-main-grey outline-none placeholder:text-lg placeholder:font-medium placeholder:-tracking-[0.25px] placeholder:text-main-grey-700"
+      className={`rounded-[12px] p-3 pl-6 text-main-grey outline-none placeholder:text-lg placeholder:font-medium placeholder:-tracking-[0.25px] placeholder:text-main-grey-700 ${className}`}
       onChange={onChangeHandler}
       value={value}
     />
