@@ -33,7 +33,7 @@ function Header() {
         className={`${isOpen ? "fixed right-0 top-0 z-50 flex h-screen w-screen flex-col items-center justify-center gap-10 bg-main-grey-100 text-2xl font-bold text-main-blue-900" : "hidden"} col-start-3 col-end-8 text-sm md:gap-4 lg:flex xl:gap-9`}
       >
         {navLinks.map((l, i) => (
-          <li key={i} className="relative px-1 py-1">
+          <li onClick={toggleMobileMenu} key={i} className="relative px-1 py-1">
             <NavLink
               className={
                 (pathname === `/${l.toLowerCase()}` &&
