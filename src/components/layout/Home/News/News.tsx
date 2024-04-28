@@ -21,10 +21,12 @@ function News() {
         </MainLink>
       </div>
       <PostCard
+        medium
         post={posts[0]}
         className="col-start-2 col-end-12 mb-4 sm:col-start-2 sm:col-end-7"
       />
       <PostCard
+        medium
         post={posts[1]}
         className="col-start-2 col-end-12 mb-4 sm:col-start-7 sm:col-end-12"
       />
