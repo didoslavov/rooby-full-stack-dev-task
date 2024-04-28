@@ -64,11 +64,13 @@ function PostCard({
         </figure>
       </article>
       {big && (
-        <Image
-          src={post.content.image}
-          alt="Blog image"
-          className="col-start-1 col-end-12 row-start-2 my-6 group-hover:drop-shadow-xl md:col-start-6 md:row-start-1"
-        />
+        <div className="col-span-full w-full max-w-[555px] lg:col-span-5">
+          <Image
+            src={post.content.image}
+            alt="Blog image"
+            className="col-start-1 col-end-12 row-start-2 my-6 w-full group-hover:drop-shadow-xl md:col-start-6 md:row-start-1"
+          />
+        </div>
       )}
     </>
   );
