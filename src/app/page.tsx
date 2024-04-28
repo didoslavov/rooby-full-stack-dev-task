@@ -1,4 +1,4 @@
-import Hero from "@/components/layout/Home/Hero";
+import Hero from "@/components/layout/Home/Hero/Hero";
 import Benefits from "@/components/layout/Home/Benefits/Benefits";
 import Expertise from "@/components/layout/Home/Expertise/Expertise";
 import Integrations from "@/components/layout/Home/Integrations/Integrations";
