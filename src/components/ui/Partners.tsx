@@ -4,7 +4,7 @@ import React, { ReactNode } from "react";
 
 function Partners({ children }: { children: ReactNode }) {
   return (
-    <>
+    <div className="col-start-1 col-end-13 grid grid-cols-subgrid items-center justify-items-center">
       <p className="col-span-full col-start-1 row-start-2 justify-self-start font-medium -tracking-[0.22px] md:col-end-4 md:row-auto ">
         {children}
       </p>
@@ -18,7 +18,7 @@ function Partners({ children }: { children: ReactNode }) {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
