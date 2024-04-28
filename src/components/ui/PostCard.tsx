@@ -28,7 +28,7 @@ function PostCard({
   return (
     <>
       <article
-        className={`${className} ${big && "self-center border-b border-t border-main-grey-700"}`}
+        className={`${className} ${!post.content.image && "row-start-2"} ${big && `self-center border-b border-t border-main-grey-700`}`}
       >
         {post.content.image && (
           <Chip className={`mb-4 ${big && "mt-4"}`}>{post.tag}</Chip>
