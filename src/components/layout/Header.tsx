@@ -24,7 +24,7 @@ function Header() {
       <Link href="/">
         <Image
           src={logo}
-          className={`${isOpen ? "left absolute top-6 z-50 m-4" : "col-span-2 col-start-1 min-w-24"}`}
+          className={`${isOpen ? "absolute left-0 top-3 z-50 m-4" : "col-span-2 col-start-1 min-w-24"}`}
           alt="Company logo - Rooody"
           width={95}
           height={26}

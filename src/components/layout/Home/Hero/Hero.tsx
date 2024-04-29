@@ -1,4 +1,3 @@
-import React from "react";
 import Heading from "../../../ui/Heading";
 import Image from "next/image";
 import heroImage from "/public/hero/hero.svg";
