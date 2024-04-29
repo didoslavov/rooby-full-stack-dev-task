@@ -46,7 +46,7 @@ function PostCard({
               <h3
                 className={`${big ? "mb-9 text-2xl lg:mb-[118px] lg:text-[40px] lg:leading-[50px] lg:-tracking-[0.56px]" : medium ? "mb-6 text-lg md:leading-[42px] md:-tracking-[0.44px] lg:text-2xl xl:text-[32px]" : small ? "mb-8 text-base sm:text-lg lg:text-2xl lg:leading-[34px] lg:-tracking-[0.33px]" : "mb-8 mt-4 text-base lg:w-[87%] lg:text-2xl lg:leading-[34px] lg:-tracking-[0.33px]"}`}
               >
-                <Link href="#">{post.title}</Link>
+                <Link href={`/details/${post.id}`}>{post.title}</Link>
               </h3>
             </Heading>
             <p className={`flex justify-between ${big && "mb-4"}`}>
