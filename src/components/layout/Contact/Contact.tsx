@@ -28,7 +28,7 @@ function Contact() {
           <ContactInfo border heading="Support" text="support@me.com" />
         </div>
       </div>
-      <ContactForm className="col-start-2 col-end-12 sm:col-start-3 sm:col-end-11 md:col-start-7" />
+      <ContactForm className="col-start-2 col-end-12 sm:col-start-3 sm:col-end-11 md:col-start-7 md:col-end-12" />
       <div className="col-start-1 col-end-13 grid grid-cols-subgrid bg-white py-10 lg:py-[105px]">
         <div className="col-start-2 col-end-12">
           <Partners>Our clients and partners</Partners>
