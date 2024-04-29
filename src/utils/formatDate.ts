@@ -1,4 +1,5 @@
-export const formatDate = (date: string) =>
+export const formatDate = (date?: string) =>
+  date &&
   ((str) => str.charAt(0).toUpperCase() + str.slice(1))(
     new Date(date)
       .toLocaleDateString("en", {
