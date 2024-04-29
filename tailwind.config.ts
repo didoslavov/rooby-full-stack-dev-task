@@ -33,6 +33,7 @@ const config: Config = {
         "main-green": {
           DEFAULT: "#00CC61",
           100: "#EBFBF3",
+          900: "#00AF53",
         },
       },
     },
