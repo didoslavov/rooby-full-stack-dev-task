@@ -15,8 +15,8 @@ function ContactInfo({
     <div
       className={`${className} ${border && "border-l border-main-grey-700 px-4"}`}
     >
-      <h4 className="text-lg font-bold">{heading}</h4>
-      <p className="text-lg leading-7 text-main-grey">{text}</p>
+      <h4 className="text-base font-bold lg:text-lg">{heading}</h4>
+      <p className="text-base leading-7 text-main-grey lg:text-lg">{text}</p>
     </div>
   );
 }

@@ -18,7 +18,7 @@ function TextArea({
       name={name}
       id={name}
       placeholder={placeholder}
-      className={`resize-none rounded-[12px] p-4 pl-6 text-main-grey outline-none placeholder:text-[21px] placeholder:font-medium placeholder:-tracking-[0.29px] placeholder:text-main-grey-700 ${className}`}
+      className={`resize-none rounded-[12px] p-4 pl-6 text-main-grey outline-none placeholder:font-medium placeholder:-tracking-[0.29px] placeholder:text-main-grey-700 ${className}`}
       onChange={onChangeHandler}
       value={value}
     />
