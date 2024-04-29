@@ -669,6 +669,14 @@ export function getPosts(filter?: string) {
   return filter ? posts.filter((p) => p.tag === filter) : posts;
 }
 
+export function getPostById(id: number) {
+  return posts.find((p) => p.id === id);
+}
+
+export function getMorePosts(tag: string) {
+  return posts.filter((p) => p.tag === tag);
+}
+
 export function getNavLinks() {
   return navLinks;
 }
