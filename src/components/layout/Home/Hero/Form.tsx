@@ -1,43 +1,25 @@
 "use client";
 
-import { ChangeEvent, FormEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Notification from "../../../ui/Notification";
 import TextInput from "@/components/ui/TextInput";
 import SubmitInput from "@/components/ui/SubmitInput";
+import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import { isEmailValid } from "@/utils/validators";
 
 function Form() {
-  const [email, setPhone] = useState("");
   const [notification, setNotification] = useState({ type: "", text: "" });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<{ email: string }>();
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/g;
-
-    if (!email.trim()) {
-      setNotification({
-        type: "error",
-        text: "Please enter your email",
-      });
-      return;
-    }
-
-    if (!emailRegex.test(email)) {
-      setNotification({
-        type: "error",
-        text: "Please enter valid email.",
-      });
-      return;
-    }
-    setPhone("");
-
+  const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setNotification({
       type: "success",
-      text: `We'll send you more information at ${email}!`,
+      text: `We'll send you more information`,
     });
-  };
-
-  const onEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setPhone(e.target.value);
   };
 
   const closeNotification = () => {
@@ -53,6 +35,7 @@ function Form() {
       return () => clearTimeout(timeoutId);
     }
   }, [notification]);
+
   return (
     <>
       {notification.type && (
@@ -64,21 +47,32 @@ function Form() {
       )}
       <form
         className="col-start-1 col-end-13 mb-3 md:col-end-12 2xl:col-end-10"
-        onSubmit={handleSubmit}
+        onSubmit={handleSubmit(onSubmit)}
       >
         <div className="col-start-1 col-end-11 grid grid-cols-12 rounded-[12px] bg-white py-3 pr-3 shadow-sm">
           <TextInput
-            name="email"
             placeholder="Enter your email"
             className="col-start-1 col-end-9 flex-1"
-            onChangeHandler={onEmailChange}
-            value={email}
+            register={register("email", {
+              required: { value: true, message: "Email is required." },
+              validate: (value) =>
+                isEmailValid(value) || "Please enter a valid email",
+              minLength: {
+                value: 5,
+                message: `Email should be 5 chars or more`,
+              },
+            })}
           />
           <SubmitInput
             value="Try for free"
-            className="col-start-9 col-end-13"
+            className="col-start-9 col-end-13 text-[17px] font-semibold leading-[40px]"
           />
         </div>
+        {errors.email && (
+          <p className="pl-4 pt-2 text-xs text-red-400">
+            {errors.email.message}
+          </p>
+        )}
       </form>
     </>
   );
