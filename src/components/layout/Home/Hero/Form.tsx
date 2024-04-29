@@ -11,14 +11,17 @@ function Form() {
   const [notification, setNotification] = useState({ type: "", text: "" });
   const {
     register,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm<{ email: string }>();
 
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
+    reset();
+
     setNotification({
       type: "success",
-      text: `We'll send you more information`,
+      text: `We'll send you more information at ${data.email}`,
     });
   };
 
