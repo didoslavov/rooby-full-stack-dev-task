@@ -24,7 +24,7 @@ function Header() {
       <Link href="/">
         <Image
           src={logo}
-          className={`${isOpen ? "left absolute top-6 z-50 m-4" : "col-span-2 col-start-1"}`}
+          className={`${isOpen ? "left absolute top-6 z-50 m-4" : "col-span-2 col-start-1 min-w-24"}`}
           alt="Company logo - Rooody"
           width={95}
           height={26}
@@ -48,6 +48,23 @@ function Header() {
             </NavLink>
           </li>
         ))}
+        <li
+          onClick={closeMobileNav}
+          className="relative block px-1 py-1 lg:hidden"
+        >
+          <NavLink link="#">Login</NavLink>
+        </li>
+        <li
+          onClick={closeMobileNav}
+          className="relative block px-1 py-1 lg:hidden"
+        >
+          <NavLink
+            link="#"
+            className="rounded-md bg-main-blue px-5 py-2 text-white before:hidden hover:bg-white hover:text-main-blue"
+          >
+            Try for free
+          </NavLink>
+        </li>
         <CgClose
           size={30}
           className="absolute right-4 top-6 text-main-blue-900 hover:cursor-pointer lg:hidden"
@@ -58,7 +75,7 @@ function Header() {
         size="sm"
         link="#"
         type="outline"
-        className="col-span-3 col-start-4 text-nowrap px-5 text-center text-xs shadow-md md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-11"
+        className="col-span-3 col-start-4 hidden text-nowrap px-5 text-center text-xs shadow-md md:col-span-2 md:col-start-8 lg:col-span-1 lg:col-start-11 lg:block"
       >
         Log In
       </Button>
@@ -66,7 +83,7 @@ function Header() {
       <Button
         link="#"
         size="sm"
-        className="col-span-3 col-start-7 row-span-1 text-nowrap px-6 text-center shadow-md md:col-start-10 lg:col-start-12"
+        className="col-span-3 col-start-7 row-span-1 hidden text-nowrap px-6 text-center shadow-md md:col-start-10 lg:col-start-12 lg:block"
         type="full"
       >
         Try for Free

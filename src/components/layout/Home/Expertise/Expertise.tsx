@@ -24,7 +24,7 @@ function Expertise() {
                   link="#"
                   size="lg"
                   type="accent"
-                  className="pointer-events-auto px-2 font-bold lg:pl-5 lg:pr-[18px]"
+                  className="pointer-events-auto px-4 py-[8px] text-center font-bold lg:pl-5 lg:pr-[18px] xl:px-6 xl:py-4"
                 >
                   Start now
                 </Button>
