@@ -20,7 +20,7 @@ function Header() {
   const closeMobileNav = () => setIsOpen(false);
 
   return (
-    <header className="relative col-start-1 col-end-13 grid grid-cols-12 items-center px-4 py-6 md:pl-4 2xl:col-start-2 2xl:col-end-12">
+    <header className="relative col-start-1 col-end-13 grid grid-cols-12 items-center px-4 py-6 md:pl-4 2xl:col-start-1  2xl:col-end-12">
       <Link href="/">
         <Image
           src={logo}
