@@ -10,7 +10,7 @@ import Link from "next/link";
 import Button from "../ui/Button";
 import { usePathname } from "next/navigation";
 
-const navLinks = ["Product", "Pricing", "Company", "Blog", "Contact"];
+const navLinks = ["Products", "Pricing", "Company", "Blog", "Contact"];
 
 function Header() {
   const pathname = usePathname();
